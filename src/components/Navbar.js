@@ -25,7 +25,31 @@ const Navbar = ({ isAuth, signUserOut}) => {
             
             <nav className="tm-nav" id="tm-nav">            
                 <ul>
-                    <li className="tm-nav-item active">
+
+                    <NavLink to="/" className="tm-nav-item ">
+                        <NavLink to="/" className="tm-nav-link"> Home </NavLink> 
+                    </NavLink>
+                    <NavLink to="/about" className="tm-nav-item">
+                        <NavLink to="/about" className="tm-nav-link"> About </NavLink> 
+                    </NavLink>
+                    
+                    {!isAuth ? (
+                        <NavLink to="/login" className="tm-nav-item">
+                            <NavLink to="/login" className="tm-nav-link"> Login </NavLink>
+                        </NavLink>
+                    ) : (
+                    <>
+                    <li className="tm-nav-item">
+                    <NavLink to="/CreatePost" className="tm-nav-link"> Create Post </NavLink>
+                    </li>
+                    <li className="tm-nav-item">
+                    <div onClick={signUserOut} className="tm-nav-link"> Log Out </div>
+                    </li>
+                   
+            </>
+            )}
+                </ul>
+                    {/* <li className="tm-nav-item active">
                         <NavLink to="/" className="tm-nav-link"> Home </NavLink> 
                     </li>
                     <li className="tm-nav-item">
@@ -47,7 +71,7 @@ const Navbar = ({ isAuth, signUserOut}) => {
                    
             </>
             )}
-                </ul>
+                </ul> */}
             </nav>
             
         </div>

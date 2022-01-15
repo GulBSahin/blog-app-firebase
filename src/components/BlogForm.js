@@ -63,7 +63,7 @@ const BlogForm = ({ isAuth }) => {
             }} />
           </div>
           <div className="mb-4">
-            <input className="form-control"  type="text" placeholder="Image URL..."
+            <input className="form-control"  type="text" placeholder="Labels..."
             onChange={(event) => {
               setPostLabels(event.target.value);
             }} />
