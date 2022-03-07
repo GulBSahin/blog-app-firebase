@@ -1,5 +1,5 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
+![blog-app-react](https://user-images.githubusercontent.com/70208660/156997805-fd16b8d8-4650-4a16-8652-bbf25259123a.gif)
+
 
 # Project-011 : FireBlog App (RC-11)
 
